@@ -35,27 +35,27 @@ public class ConnexionForm {
         String password = getValeurChamp(request,
             CHAMP_PASS);
 
-        try {
-            this.client = Inscrits.connexion(username,
-                password);
-        } catch(Exception e) {
+        this.client = Inscrits.connexion(username,
+            password);
+        if(this.client == null) {
             setErreur("client",
-                "Ce client n'existe pas");
-        }
-        HttpSession session = request.getSession();
-        Long idSessionClient = (Long) session.getAttribute("idSession");
-        Panier panierClient = (Panier) session.getAttribute("panier");
+                "Invalid username or password");
+        } else {
+            HttpSession session = request.getSession();
+            Long idSessionClient = (Long) session.getAttribute("idSession");
+            Panier panierClient = (Panier) session.getAttribute("panier");
 
-        if(idSessionClient == null
-            || idSessionClient.longValue() != this.client.getIdClient()) {
-            idSessionClient = new Long(this.client.getIdClient());
-            session.setAttribute("idSession",
-                idSessionClient);
-            panierClient = new Panier();
-            session.setAttribute("panier",
-                panierClient);
+            if(idSessionClient == null
+                || idSessionClient.longValue() != this.client.getIdClient()) {
+                idSessionClient = new Long(this.client.getIdClient());
+                session.setAttribute("idSession",
+                    idSessionClient);
+                panierClient = new Panier();
+                session.setAttribute("panier",
+                    panierClient);
 
-            System.out.println("Panier cree");
+                System.out.println("Panier cree");
+            }
         }
         if(this.erreurs.isEmpty()) {
             this.resultat = "Succès de la connexion.";
