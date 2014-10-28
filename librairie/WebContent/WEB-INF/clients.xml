@@ -3,7 +3,7 @@
     <client>
         <id>1</id>
         <username>bob</username>
-        <passord>tiger</passord>
+        <password>tiger</password>
         <nom>O</nom>
         <prenom>Bob</prenom>
         <adresse>5150 rue des Ormes</adresse>
@@ -11,7 +11,7 @@
     <client>
         <id>2</id>
         <username>max</username>
-        <passord>tiger</passord>
+        <password>tiger</password>
         <nom>Blabla</nom>
         <prenom>Max</prenom>
         <adresse>333 Avenue du Parc</adresse>
@@ -19,7 +19,7 @@
     <client>
         <id>3</id>
         <username>toto</username>
-        <passord>tiger</passord>
+        <password>tiger</password>
         <nom>Titi</nom>
         <prenom>Toto</prenom>
         <adresse>333 Avenue du Parc</adresse>
