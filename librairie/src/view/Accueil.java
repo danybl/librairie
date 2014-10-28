@@ -43,7 +43,7 @@ public class Accueil extends HttpServlet {
         Panier panier = (Panier) session.getAttribute("panier");
         if(panier == null) {
 
-            response.sendRedirect("/connexion.jsp");
+            response.sendRedirect("connexion.jsp");
 
         }
         response.setContentType(CONTENT_TYPE);
