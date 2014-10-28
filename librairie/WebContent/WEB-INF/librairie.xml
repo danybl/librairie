@@ -1,0 +1,178 @@
+<bookstore>
+	 <category catg = "Cuisine">
+			<book>
+				<code>1</code>
+				<title lang="fr">Les Recettes du Globe Cooker, Inde</title>
+				<author>Fred Chesneau</author>
+				<number>128230</number>
+				<price>07.95</price>
+				<image src="livres/Cuisine/INDE.jpg"></image>
+			</book>
+			<book>
+				<code>2</code>
+				<title lang="fr">1000 SAUCES</title>
+				<author>Nadia Arumugam</author>
+				<number>128600</number>
+				<price>29.95</price>
+				<image src="livres/Cuisine/1000 SAUCES.jpg"></image>
+			</book>
+			<book>
+				<code>3</code>
+				<title lang="fr">MANGE DONC CE QUE TU AIMES</title>
+				<author>Marlène Koch</author>
+				<number>128734</number>
+				<price>24.95</price>
+				<image src="livres/Cuisine/MANGE DONC CE QUE TU AIMES.jpg"></image>
+			</book>
+			<book>
+				<code>4</code>
+				<title lang="fr">ITALIE!</title>
+				<author>Valéry Drouet</author>
+				<number>130275</number>
+				<price>25.95</price>
+				<image src="livres/Cuisine/ITALIE.jpg"></image>
+			</book>
+	 </category>
+	 
+	 <category catg = "Informatique">
+			<book>
+				<code>5</code>
+				<title lang="fr">ANALYSER LES AVIS SUR INTERNET</title>
+				<author>Bernard Normier</author>
+				<number>231142</number>
+				<price>29.95</price>
+				<image src="livres/Informatique/ANALYSER LES AVIS SUR INTERNET.jpg"></image>
+				
+			</book>
+			<book>
+				<code>6</code>
+				<title lang="fr">EXCHANGE SERVER 2013</title>
+				<author>Loïc Thobois</author>
+				<number>231953</number>
+				<price>59.95</price>
+				<image src="livres/Informatique/EXCHANGE SERVER 2013.jpg"></image>
+			</book>
+			<book>
+				<code>7</code>
+				<title lang="fr">JQUERY UI</title>
+				<author>Luc Van Lancker</author>
+				<number>231941</number>
+				<price>59.95</price>
+				<image src="livres/Informatique/JQUERY UI.jpg"></image>
+			</book>
+			<book>
+				<code>8</code>
+				<title lang="fr">ANDROID</title>
+				<author>Serge Ungar</author>
+				<number>232225</number>
+				<price>104.00</price>
+				<image src="livres/Informatique/ANDROID.jpg"></image>
+			</book>
+	 </category>
+	 
+	<category catg = "Jardinage"> 
+			<book>
+				<code>9</code>
+				<title lang="fr">L'ABC DU POTAGER</title>
+				<author>Gérard Meudec</author>
+				<number>329685</number>
+				<price>46.95</price>
+				<image src="livres/Jardinage/L'ABC DU POTAGER.jpg"></image>
+			</book>
+			<book>
+				<code>10</code>
+				<title lang="fr">PLANTES ANTI-ÂGE</title>
+				<author>Franck Gigon</author>
+				<author>Patricia Bareau</author>
+				<number>329684</number>
+				<price>21.95</price>
+				<image src="livres/Jardinage/PLANTES ANTI-ÂGE.jpg"></image>
+			</book>
+			<book>
+				<code>11</code>
+				<title lang="fr">LES IDÉES REÇUES DU JARDINIER</title>
+				<author>Xavier Mathias</author>
+				<number>328240</number>
+				<price>20.95</price>
+				<image src="livres/Jardinage/LES IDÉES REÇUES DU JARDINIER.jpg"></image>
+			</book>
+			<book>
+				<code>12</code>
+				<title lang="fr">JARDINS D'EAU</title>
+				<author>Veronica Lorson Fowler</author>
+				<number>328629</number>
+				<price>22.95</price>
+				<image src="livres/Jardinage/JARDINS D'EAU.jpg"></image>
+			</book>
+	</category>
+
+	<category catg = "Poésie"> 
+			<book>
+				<code>13</code>
+				<title lang="fr">UN PEU PAR HASARD</title>
+				<author>Alko Tah Cian Huanchi</author>
+				<number>433762</number>
+				<price>24.95</price>
+				<image src="livres/Poésie/UN PEU PAR HASARD.jpg"></image>
+			</book>
+			<book>
+				<code>14</code>
+				<title lang="fr">LOVE EXPLOSION</title>
+				<author>Albert Nikolla</author>
+				<number>433749</number>
+				<price>30.95</price>
+				<image src="livres/Poésie/LOVE EXPLOSION.jpg"></image>
+			</book>
+			<book>
+				<code>15</code>
+				<title lang="fr">L'ÉRUPTION D'UNE MÉMOIRE</title>
+				<author>Akéouli Nouhoum Baoum</author>
+				<number>433747</number>
+				<price>21.95</price>
+				<image src="livres/Poésie/L'ÉRUPTION D'UNE MÉMOIRE.jpg"></image>
+			</book>
+			<book>
+				<code>16</code>
+				<title lang="fr">D'EN DANTE-CI !</title>
+				<author>Alain Robinet</author>
+				<number>433765</number>
+				<price>30.95</price>
+				<image src="livres/Poésie/D'EN DANTE-CI !.jpg"></image>
+			</book>
+	</category>
+
+	<category catg = "Policier"> 
+			<book>
+				<code>17</code>
+				<title lang="fr">GASOLINE ALLEY - POLAROÏDE</title>
+				<author>Pierre Mikaïloff</author>
+				<number>531081</number>
+				<price>24.95</price>
+				<image src="livres/Policier/GASOLINE ALLEY - POLAROÏDE.jpg"></image>
+			</book>
+			<book>
+				<code>18</code>
+				<title lang="fr">BONDRÉE</title>
+				<author>Andrée A. Michaud</author>
+				<number>531116</number>
+				<price>26.95</price>
+				<image src="livres/Policier/BONDRÉE.jpg"></image>
+			</book>
+			<book>
+				<code>19</code>
+				<title lang="fr">SAULT-AU-GALANT</title>
+				<author>Isabelle Grégoire</author>
+				<number>530949</number>
+				<price>24.95</price>
+				<image src="livres/Policier/SAULT-AU-GALANT.jpg"></image>
+			</book>
+			<book>
+				<code>20</code>
+				<title lang="fr">L'ASSASSIN DU PÔLE NORD</title>
+				<author>Christian Jacq</author>
+				<number>527873</number>
+				<price>21.95</price>
+				<image src="livres/Policier/L'ASSASSIN DU PÔLE NORD.jpg"></image>
+			</book>
+	</category>
+</bookstore>
