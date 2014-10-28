@@ -19,7 +19,7 @@ public class Connexion extends HttpServlet {
 
     private static final String VUE_CONNEXION_FAIL = "/connexion.jsp";
 
-    private static final String VUE_CONNEXION_SUCCESS = "/WEB-INF/jsp/Accueil.jsp";
+    private static final String VUE_CONNEXION_SUCCESS = "/Accueil";
 
     @Override
     public void doGet(HttpServletRequest request,

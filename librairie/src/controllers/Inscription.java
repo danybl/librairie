@@ -17,8 +17,6 @@ public class Inscription extends HttpServlet {
 
     public static final String ATT_FORM = "form";
 
-    public static final String VUE = "/WEB-INF/jsp/inscription.jsp";
-
     public static final String VUE_INSCRIPTION_SUCCESS = "/WEB-INF/jsp/confirmationInscription.jsp";
 
     public static final String VUE_INSCRIPTION_FAIL = "/WEB-INF/jsp/inscription.jsp";

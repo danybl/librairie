@@ -74,11 +74,11 @@ public final class InscriptionForm {
         /* Initialisation du résultat global de la validation. */
         if(this.erreurs.isEmpty()) {
             this.resultat = "Succès de l'inscription.";
-        } else {
-            this.resultat = "Échec de l'inscription";
+            Inscrits.ajouter(client);
+            return client;
         }
-        Inscrits.ajouter(client);
-        return client;
+        this.resultat = "Échec de l'inscription";
+        return null;
 
     }
 
