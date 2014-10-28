@@ -19,14 +19,16 @@ public class Inscription extends HttpServlet {
 
     public static final String VUE = "/WEB-INF/jsp/inscription.jsp";
 
-    public static final String VUECONFIRMATION = "/WEB-INF/jsp/confirmationInscription.jsp";
+    public static final String VUE_INSCRIPTION_SUCCESS = "/WEB-INF/jsp/confirmationInscription.jsp";
+
+    public static final String VUE_INSCRIPTION_FAIL = "/WEB-INF/jsp/inscription.jsp";
 
     @Override
     public void doGet(HttpServletRequest request,
         HttpServletResponse response) throws ServletException,
         IOException {
         /* Affichage de la page d'inscription */
-        this.getServletContext().getRequestDispatcher(VUE).forward(request,
+        this.getServletContext().getRequestDispatcher(VUE_INSCRIPTION_FAIL).forward(request,
             response);
     }
 
@@ -47,9 +49,16 @@ public class Inscription extends HttpServlet {
         request.setAttribute(ATT_USER,
             client);
 
-        /* Transmission de la paire d'objet request/response à notre JSP */
-        this.getServletContext().getRequestDispatcher(VUECONFIRMATION).forward(request,
-            response);
+        if(client == null) {
+            /* Transmission de la paire d'objet request/response à notre JSP */
+            this.getServletContext().getRequestDispatcher(VUE_INSCRIPTION_FAIL).forward(request,
+                response);
+        } else {
+
+            this.getServletContext().getRequestDispatcher(VUE_INSCRIPTION_SUCCESS).forward(request,
+                response);
+
+        }
     }
 
 }
