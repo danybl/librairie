@@ -36,6 +36,23 @@ public class ConnexionForm {
             CHAMP_PASS);
 
         try {
+            validationMotsDePasse(motDePasse,
+                confirmation);
+        } catch(Exception e) {
+            setErreur(CHAMP_PASS,
+                e.getMessage());
+            setErreur(CHAMP_CONF,
+                null);
+        }
+
+        try {
+            validationUsername(username);
+        } catch(Exception e) {
+            setErreur(CHAMP_USERNAME,
+                e.getMessage());
+        }
+
+        try {
             this.client = Inscrits.connexion(username,
                 password);
         } catch(Exception e) {
