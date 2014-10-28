@@ -36,43 +36,25 @@ public class ConnexionForm {
             CHAMP_PASS);
 
         try {
-            validationMotsDePasse(motDePasse,
-                confirmation);
-        } catch(Exception e) {
-            setErreur(CHAMP_PASS,
-                e.getMessage());
-            setErreur(CHAMP_CONF,
-                null);
-        }
-
-        try {
-            validationUsername(username);
-        } catch(Exception e) {
-            setErreur(CHAMP_USERNAME,
-                e.getMessage());
-        }
-
-        try {
             this.client = Inscrits.connexion(username,
                 password);
         } catch(Exception e) {
             setErreur("client",
                 "Ce client n'existe pas");
+        }
+        HttpSession session = request.getSession();
+        Long idSessionClient = (Long) session.getAttribute("idSession");
+        Panier panierClient = (Panier) session.getAttribute("panier");
 
-            HttpSession session = request.getSession();
-            Long idSessionClient = (Long) session.getAttribute("idSession");
-            Panier panierClient = (Panier) session.getAttribute("panier");
+        if(idSessionClient == null
+            || idSessionClient.longValue() != this.client.getIdClient()) {
+            idSessionClient = new Long(this.client.getIdClient());
+            session.setAttribute("idSession",
+                idSessionClient);
+            panierClient = new Panier();
+            session.setAttribute("panier",
+                panierClient);
 
-            if(idSessionClient == null
-                || idSessionClient.longValue() != this.client.getIdClient()) {
-                idSessionClient = new Long(this.client.getIdClient());
-                session.setAttribute("idSession",
-                    idSessionClient);
-                panierClient = new Panier();
-                session.setAttribute("panier",
-                    panierClient);
-
-            }
             System.out.println("Panier cree");
         }
         if(this.erreurs.isEmpty()) {
