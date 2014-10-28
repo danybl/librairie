@@ -31,10 +31,13 @@
                 <span class="erreur">${form.erreurs['nom'] }</span>
                 <br /><br />
 
-                <input id ="btn" type="submit" value="Inscription" class="sansLabel" />       
-                <br />
-             
-            </fieldset>
+                <input id ="btn" type="submit" value="Inscription" class="sansLabel" />   
+                           
         </form>
+        <form method="get" action="Accueil">
+            <input id="btn" type="submit" value="Accueil"/>
+        </form>  
+        <br />  
+         </fieldset>  
     </body>
 </html>

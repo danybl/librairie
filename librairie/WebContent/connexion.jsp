@@ -22,11 +22,11 @@
 			</form> 
 		
 		<div class="connexion">
-			<form method="get" action="Accueil">
+			<form method="get" action="/Accueil.jsp">
 			<input type="submit" value="Accueil" id="btn">
 			</form>
 
-			<form action="Inscription">
+			<form method="get" action="Inscription">
 			<input type="submit" value="Créer un compte" id="btn">
 			</form>
 		</div>
