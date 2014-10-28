@@ -13,12 +13,11 @@
     		<form class="connexion-form" method="post" action="Connexion">  
 				<label for="username">Nom d'usager:</label><br />
 				<input type="text" id="username" name="username" placeholder="Nom d'usager">
-				<span class="erreur">${form.erreurs['username'] }</span>
 				<br /><br />
 				<label for="password">Mot de passe:</label><br />
 				<input type="password" id="password" name="password" placeholder="Mot de passe d'usager">
-				<span class="erreur">${form.erreurs['password'] }</span>
-				<br /><br /> 
+				<br /><br />
+				<span class="erreur">${form.erreurs['client'] }</span> 
 				<input type="submit" value="Connexion" id="btn"/>  
 			</form> 
 		
