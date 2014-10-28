@@ -19,7 +19,7 @@ public class Inscription extends HttpServlet {
 
     public static final String VUE = "/WEB-INF/jsp/inscription.jsp";
 
-    public static final String VUECONFIRMATION = "/confirmationInscription.jsp";
+    public static final String VUECONFIRMATION = "/WEB-INF/jsp/confirmationInscription.jsp";
 
     @Override
     public void doGet(HttpServletRequest request,
