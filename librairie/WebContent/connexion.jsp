@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <link rel="SHORTCUT ICON" href="livre.ico" type="image/icon" />
         <title>Connexion</title>
         <link type="text/css" rel="stylesheet" href="librairieCSS.css" />
     </head>

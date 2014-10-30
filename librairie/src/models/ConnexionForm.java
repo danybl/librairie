@@ -58,9 +58,9 @@ public class ConnexionForm {
             }
         }
         if(this.erreurs.isEmpty()) {
-            this.resultat = "SuccÃ¨s de la connexion.";
+            this.resultat = "Succés de la connexion.";
         } else {
-            this.resultat = "Ã‰chec de la connexion";
+            this.resultat = "Échec de la connexion";
         }
 
         return this.client;

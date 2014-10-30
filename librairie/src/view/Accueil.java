@@ -53,6 +53,7 @@ public class Accueil extends HttpServlet {
 
             out.println("<html>");
             out.println("<head>");
+            out.println("<link rel=\"shortcut icon\" href=\"livre.ico\">");
             out.println("<link href=\"librairieCSS.css\" rel=\"stylesheet\" media=\"all\" type=\"text/css\">");
             out.println("<title>Librairie du coin</title>");
             out.println("</head>");
