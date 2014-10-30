@@ -8,10 +8,12 @@
         <link type="text/css" rel="stylesheet" href="librairieCSS.css" />
     </head>
     <body>
+    	<h1>LIBRAIRIE DU COIN <img src="livres.png" name="image" border="0" alt=" "></h1>
+
         <form method="post" action="Inscription">
             <fieldset>
                 <legend>Inscription</legend>
-
+                
                 <label for="email">Adresse email <span class="requis">*</span></label><br />
                 <input type="text" id="email" name="email" value="<c:out value="${client.email }"/>" size="20" maxlength="60" />
                 <span class="erreur">${form.erreurs['email'] }</span>

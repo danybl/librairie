@@ -10,7 +10,7 @@
     <body>
         <h1>LIBRAIRIE DU COIN <img src="livres.png" name="image" border="0" alt=" "></h1>
     	<fieldset>
-    		<legend> Connectez-vous!</legend>
+    		<legend> <img src="login.png" name="image" border="0" alt="login"> Connectez-vous!</legend>
     		<form class="connexion-form" method="post" action="Connexion">  
 				<label for="username">Nom d'usager:</label><br />
 				<input type="text" id="username" name="username" placeholder="Nom d'usager">
