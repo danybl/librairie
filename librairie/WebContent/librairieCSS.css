@@ -1,3 +1,8 @@
+*{
+margin:0;
+padding:0
+}
+
 body {
     font-family: arial, helvetica, sans-serif; 
     color: black;
@@ -5,17 +10,50 @@ body {
     background-image: linear-gradient(Gray, white);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin:0;
 }
 
 h1{
     color : #7CC2FF;
     font-size : 280%;
-    text-align : center;
-    
+    text-align : center; 
 }
+
+#navigation { 
+      width: 70%;
+      float: left;
+      padding: 0;
+      margin-left: 15%;
+      margin-right: 30px;
+      list-style: none;
+      background-color: #f2f2f2;
+      border-bottom: 1px solid #ccc; 
+      border-top: 1px solid #ccc;
+      
+}
+#navigation li {
+      float: left; 
+      list-style-type: none;
+}
+
+#navigation li a {
+      display: block;
+      padding: 8px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #069;
+      border-right: 1px solid #ccc; 
+}
+
+#navigation li a:hover {
+      color: #c00;
+      background-color: #fff;
+}
+
 legend{
     color : #7CC2FF;
     font-size : 200%;
+    list-style: none;
 }
 
 fieldset {
@@ -25,10 +63,6 @@ fieldset {
  margin:auto;
  }
 
-p{
-    color : #7CC2FF;
-    font-size : 200%;
-}
 
 .connexion-form{
     color : Black;
@@ -186,13 +220,14 @@ span {
    text-decoration: none;
    vertical-align: middle;
    }
+   
 #btn:hover {
    border-top-color: #28597a;
    background: #28597a;
    color: #ccc;
    }
+   
 #btn:active {
    border-top-color: #1b435e;
    background: #1b435e;
    }
-
