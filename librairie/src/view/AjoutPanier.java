@@ -90,13 +90,13 @@ public class AjoutPanier extends HttpServlet {
                             panier);
                     }
                 }
+                request.getRequestDispatcher("/AfficherPanier").forward(request,
+                    response);
 
             } catch(Exception e) {
                 response.sendRedirect("http://a.dilcdn.com/bl/wp-content/uploads/sites/8/babyzone/2013/04/baby-boy-crying-photo-420x420-ts-56570356.jpg");
                 out.println(e.toString());
             }
-            request.getRequestDispatcher("/afficherpanier").forward(request,
-                response);
 
         }
     }

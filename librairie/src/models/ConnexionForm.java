@@ -1,12 +1,12 @@
 
 package models;
 
-import beans.Client;
-import beans.Panier;
 import java.util.HashMap;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import beans.Client;
+import beans.Panier;
 
 public class ConnexionForm {
 
@@ -58,9 +58,9 @@ public class ConnexionForm {
             }
         }
         if(this.erreurs.isEmpty()) {
-            this.resultat = "Succés de la connexion.";
+            this.resultat = "SuccÃ¨s de la connexion.";
         } else {
-            this.resultat = "Échec de la connexion";
+            this.resultat = "Ã‰chec de la connexion";
         }
 
         return this.client;

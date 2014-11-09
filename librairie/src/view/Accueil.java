@@ -65,7 +65,7 @@ public class Accueil extends HttpServlet {
             out.println("<li><a href=\"#\">DÉCONNEXION</a></li>");
             out.println("<li><a href=\"#\">MON COMPTE</a></li>");
             out.println("<li><a href=\"inscription.jsp\">CRÉER UN NOUVEAU COMPTE</a></li>");
-            out.println("<li><a href=\"#\">PANIER</a></li>");
+            out.println("<li><a href=\"/AfficherPanier\">PANIER</a></li>");
             out.println("<li><a href=\"#\">À PROPOS DE NOUS</a></li>");
             out.println("<li><a href=\"#\">CONTACTEZ-NOUS</a></li>");
             out.println("<li><a href=\"#\">AIDE ?</a></li>");

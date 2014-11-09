@@ -15,6 +15,10 @@
     <servlet-class>view.AjoutPanier</servlet-class>
   </servlet>
   <servlet>
+    <servlet-name>AfficherPanier</servlet-name>
+    <servlet-class>view.AfficherPanier</servlet-class>
+  </servlet>
+  <servlet>
     <servlet-name>RetraitPanier</servlet-name>
     <servlet-class>view.RetraitPanier</servlet-class>
   </servlet>
@@ -37,6 +41,10 @@
   <servlet-mapping>
     <servlet-name>RetraitPanier</servlet-name>
     <url-pattern>/RetraitPanier</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>AfficherPanier</servlet-name>
+    <url-pattern>/AfficherPanier</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>Connexion</servlet-name>
