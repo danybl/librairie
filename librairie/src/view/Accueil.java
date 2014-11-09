@@ -61,10 +61,10 @@ public class Accueil extends HttpServlet {
             out.println("<h1>LIBRAIRIE DU COIN <img src=\"livres.png\" name=\"image\" border=\"0\"></h1>");
             out.println("<div id=\"navigation\">");
             out.println("<ul>");
-            out.println("<li><a href=\"Connexion.jsp\">CONNEXION</a></li>");
-            out.println("<li><a href=\"Deconnexion.jsp\">DÉCONNEXION</a></li>");
+            out.println("<li><a href=\"connexion.jsp\">CONNEXION</a></li>");
+            out.println("<li><a href=\"#\">DÉCONNEXION</a></li>");
             out.println("<li><a href=\"#\">MON COMPTE</a></li>");
-            out.println("<li><a href=\"inscrip\">CRÉER UN NOUVEAU COMPTE</a></li>");
+            out.println("<li><a href=\"inscription.jsp\">CRÉER UN NOUVEAU COMPTE</a></li>");
             out.println("<li><a href=\"#\">PANIER</a></li>");
             out.println("<li><a href=\"#\">À PROPOS DE NOUS</a></li>");
             out.println("<li><a href=\"#\">CONTACTEZ-NOUS</a></li>");
