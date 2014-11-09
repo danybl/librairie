@@ -3,7 +3,6 @@ package models;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import beans.Client;
 
@@ -29,7 +28,7 @@ public final class InscriptionForm {
     }
 
     public Client inscrireClient(HttpServletRequest request) {
-        ServletContext context = request.getServletContext();
+        // ServletContext context = request.getServletContext();
         String email = getValeurChamp(request,
             CHAMP_EMAIL);
         String motDePasse = getValeurChamp(request,
@@ -77,9 +76,9 @@ public final class InscriptionForm {
         if(this.erreurs.isEmpty()) {
             this.resultat = "Succès de l'inscription.";
             Inscrits.ajouter(client);
-            String cont = context.getRealPath("/WEB-INF/clients.xml");
-            Inscrits.ajouterBD(client,
-                cont);
+            /* String cont = context.getRealPath("/WEB-INF/clients.xml");
+             Inscrits.ajouterBD(client,
+                 cont);*/
             return client;
         }
         this.resultat = "Échec de l'inscription";
