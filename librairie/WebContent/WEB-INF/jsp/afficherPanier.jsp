@@ -26,7 +26,7 @@
     <div class="connexion"><a href="deconnexion">Deconnexion</a></div>
     <div class="box">
                 	
-       		<c:foreach items="${panier}" var="livre">
+       		<c:forEach items="${panier}" var="livre">
        		<div class="livre">
        			<span class="livre-image">
        				<img alt="<x:out select="$book/titre"/>" src="<x:out select="$book/image"/>"/>
@@ -55,7 +55,7 @@
        				</span>
        			</form>
        		</div>
-       		</x:forEach>
+       		</c:forEach>
     </div>
     </body>
 </html>
