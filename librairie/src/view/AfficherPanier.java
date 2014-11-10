@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import beans.Livre;
 import beans.Panier;
 
 public class AfficherPanier extends HttpServlet {
@@ -51,7 +52,7 @@ public class AfficherPanier extends HttpServlet {
                 + "\" height=\"300\" width=\"180\" style=\"width:80%\"></img></a>");
             out.println("</span>");
             out.println("<span class=\"text\">");
-            out.println(l.code);
+            out.println(l.getCode());
             out.println("</span>");
             out.println("<span class=\"title\">");
             out.println(l.getTitle());
@@ -64,7 +65,7 @@ public class AfficherPanier extends HttpServlet {
             out.println("</span>");
             out.println("<span class=\"qte\">");
             out.println("Quantit&eacute: "
-                + l.getQte());
+                + l.getQuantite());
             out.println("</span>");
             out.println("<form action=\"RetraitPanier\" method=\"post\">");
             out.println("<span class=\"ajouter\">");
