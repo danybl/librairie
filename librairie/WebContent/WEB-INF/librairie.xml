@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <bookstore>
 	 <category catg = "Cuisine">
 			<book>
@@ -6,7 +7,7 @@
 				<author>Fred Chesneau</author>
 				<number>128230</number>
 				<price>07.95</price>
-				<image src="livres/Cuisine/INDE.jpg"></image>
+				<image>livres/Cuisine/cui_01.jpg</image>
 			</book>
 			<book>
 				<code>2</code>
@@ -14,7 +15,7 @@
 				<author>Nadia Arumugam</author>
 				<number>128600</number>
 				<price>29.95</price>
-				<image src="livres/Cuisine/1000 SAUCES.jpg"></image>
+				<image >livres/Cuisine/cui_02.jpg</image>
 			</book>
 			<book>
 				<code>3</code>
@@ -22,7 +23,7 @@
 				<author>Marlène Koch</author>
 				<number>128734</number>
 				<price>24.95</price>
-				<image src="livres/Cuisine/MANGE DONC CE QUE TU AIMES.jpg"></image>
+				<image >livres/Cuisine/cui_03.jpg</image>
 			</book>
 			<book>
 				<code>4</code>
@@ -30,7 +31,7 @@
 				<author>Valéry Drouet</author>
 				<number>130275</number>
 				<price>25.95</price>
-				<image src="livres/Cuisine/ITALIE.jpg"></image>
+				<image >livres/Cuisine/cui_04.jpg</image>
 			</book>
 	 </category>
 	 
@@ -41,7 +42,7 @@
 				<author>Bernard Normier</author>
 				<number>231142</number>
 				<price>29.95</price>
-				<image src="livres/Informatique/ANALYSER LES AVIS SUR INTERNET.jpg"></image>
+				<image >livres/Informatique/inf_01.jpg</image>
 				
 			</book>
 			<book>
@@ -50,7 +51,7 @@
 				<author>Loïc Thobois</author>
 				<number>231953</number>
 				<price>59.95</price>
-				<image src="livres/Informatique/EXCHANGE SERVER 2013.jpg"></image>
+				<image >livres/Informatique/inf_02.jpg</image>
 			</book>
 			<book>
 				<code>7</code>
@@ -58,7 +59,7 @@
 				<author>Luc Van Lancker</author>
 				<number>231941</number>
 				<price>59.95</price>
-				<image src="livres/Informatique/JQUERY UI.jpg"></image>
+				<image >livres/Informatique/inf_03.jpg</image>
 			</book>
 			<book>
 				<code>8</code>
@@ -66,7 +67,7 @@
 				<author>Serge Ungar</author>
 				<number>232225</number>
 				<price>104.00</price>
-				<image src="livres/Informatique/ANDROID.jpg"></image>
+				<image >livres/Informatique/inf_04.jpg</image>
 			</book>
 	 </category>
 	 
@@ -77,24 +78,24 @@
 				<author>Gérard Meudec</author>
 				<number>329685</number>
 				<price>46.95</price>
-				<image src="livres/Jardinage/L'ABC DU POTAGER.jpg"></image>
+				<image >livres/Jardinage/jar_01.jpg</image>
 			</book>
 			<book>
 				<code>10</code>
-				<title lang="fr">PLANTES ANTI-ÂGE</title>
+				<title lang="fr">PLANTES ANTI-AGE</title>
 				<author>Franck Gigon</author>
 				<author>Patricia Bareau</author>
 				<number>329684</number>
 				<price>21.95</price>
-				<image src="livres/Jardinage/PLANTES ANTI-ÂGE.jpg"></image>
+				<image >livres/Jardinage/jar_02.jpg</image>
 			</book>
 			<book>
 				<code>11</code>
-				<title lang="fr">LES IDÉES REÇUES DU JARDINIER</title>
+				<title lang="fr">LES IDEES RECUES DU JARDINIER</title>
 				<author>Xavier Mathias</author>
 				<number>328240</number>
 				<price>20.95</price>
-				<image src="livres/Jardinage/LES IDÉES REÇUES DU JARDINIER.jpg"></image>
+				<image >livres/Jardinage/jar_03.jpg</image>
 			</book>
 			<book>
 				<code>12</code>
@@ -102,18 +103,18 @@
 				<author>Veronica Lorson Fowler</author>
 				<number>328629</number>
 				<price>22.95</price>
-				<image src="livres/Jardinage/JARDINS D'EAU.jpg"></image>
+				<image >livres/Jardinage/jar_04.jpg</image>
 			</book>
 	</category>
 
-	<category catg = "Poésie"> 
+	<category catg = "Poesie"> 
 			<book>
 				<code>13</code>
 				<title lang="fr">UN PEU PAR HASARD</title>
 				<author>Alko Tah Cian Huanchi</author>
 				<number>433762</number>
 				<price>24.95</price>
-				<image src="livres/Poésie/UN PEU PAR HASARD.jpg"></image>
+				<image >livres/Poesie/poe_01.jpg</image>
 			</book>
 			<book>
 				<code>14</code>
@@ -121,7 +122,7 @@
 				<author>Albert Nikolla</author>
 				<number>433749</number>
 				<price>30.95</price>
-				<image src="livres/Poésie/LOVE EXPLOSION.jpg"></image>
+				<image >livres/Poesie/poe_02.jpg</image>
 			</book>
 			<book>
 				<code>15</code>
@@ -129,7 +130,7 @@
 				<author>Akéouli Nouhoum Baoum</author>
 				<number>433747</number>
 				<price>21.95</price>
-				<image src="livres/Poésie/L'ÉRUPTION D'UNE MÉMOIRE.jpg"></image>
+				<image >livres/Poesie/poe_03.jpg</image>
 			</book>
 			<book>
 				<code>16</code>
@@ -137,7 +138,7 @@
 				<author>Alain Robinet</author>
 				<number>433765</number>
 				<price>30.95</price>
-				<image src="livres/Poésie/D'EN DANTE-CI !.jpg"></image>
+				<image >livres/Poesie/poe_04.jpg</image>
 			</book>
 	</category>
 
@@ -148,7 +149,7 @@
 				<author>Pierre Mikaïloff</author>
 				<number>531081</number>
 				<price>24.95</price>
-				<image src="livres/Policier/GASOLINE ALLEY - POLAROÏDE.jpg"></image>
+				<image >livres/Policier/pol_01.jpg</image>
 			</book>
 			<book>
 				<code>18</code>
@@ -156,7 +157,7 @@
 				<author>Andrée A. Michaud</author>
 				<number>531116</number>
 				<price>26.95</price>
-				<image src="livres/Policier/BONDRÉE.jpg"></image>
+				<image >livres/Policier/pol_02.jpg</image>
 			</book>
 			<book>
 				<code>19</code>
@@ -164,7 +165,7 @@
 				<author>Isabelle Grégoire</author>
 				<number>530949</number>
 				<price>24.95</price>
-				<image src="livres/Policier/SAULT-AU-GALANT.jpg"></image>
+				<image >livres/Policier/pol_03.jpg</image>
 			</book>
 			<book>
 				<code>20</code>
@@ -172,7 +173,7 @@
 				<author>Christian Jacq</author>
 				<number>527873</number>
 				<price>21.95</price>
-				<image src="livres/Policier/L'ASSASSIN DU PÔLE NORD.jpg"></image>
+				<image >livres/Policier/pol_04.jpg</image>
 			</book>
 	</category>
 </bookstore>
