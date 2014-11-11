@@ -13,7 +13,7 @@ public class Accueil extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
-    public static final String VUE = "/WEB-INF/jsp/accueil.jsp";
+    private static final String VUE = "/WEB-INF/jsp/accueil.jsp";
 
     @Override
     public void doGet(HttpServletRequest request,
@@ -27,6 +27,12 @@ public class Accueil extends HttpServlet {
             response.sendRedirect("connexion");
 
         }
+
+        String message = (String) request.getAttribute("message");
+
+        request.setAttribute("message",
+            message);
+
         this.getServletContext().getRequestDispatcher(VUE).forward(request,
             response);
     }

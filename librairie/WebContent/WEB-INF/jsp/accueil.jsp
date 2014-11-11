@@ -24,11 +24,21 @@
 		    <li><a href="#">AIDE ?</a></li>
     	</ul>
     </div>
-    <div class="connexion"><a href="connexion">Connexion</a></div>
-    <div class="connexion"><a href="deconnexion">Deconnexion</a></div>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <div class="specialite">
+    <form action="livreSpecialite" method="get">
+    <marquee behavior="scroll" direction="left">	
+   		<c:out value="${message }"/>
+    </marquee>
+    </form>
+    </div>
     <div class="box">
-                	
-       		<x:forEach var="book" select="$doc/bookstore/category/book">
+    	<x:forEach var="book" select="$doc/bookstore/category/book">
        		<div class="livre">
        			<span class="livre-image">
        				<img alt="<x:out select="$book/titre"/>" src="<x:out select="$book/image"/>"/>
