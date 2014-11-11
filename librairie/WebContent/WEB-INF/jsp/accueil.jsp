@@ -9,7 +9,7 @@
         <title>Librairie du coin</title>
     </head>
     <body>
-    <c:import url="/WEB-INF/librairie.xml" var="documentXML"/>
+    <c:import url="/WEB-INF/librairie.xml" var="documentXML" charEncoding="UTF-8"/>
     <x:parse var="doc" doc="${documentXML}"/>
     <h1>LIBRAIRIE DU COIN <img src="livres.png" name="image" border="0"></h1>
     <div id="navigation">
