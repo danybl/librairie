@@ -63,6 +63,11 @@ fieldset {
  margin:auto;
  }
 
+#specialite{
+	color: #069;
+	font-size : 120%;
+	margin-top: 2;
+}
 
 .connexion-form{
     color : Black;

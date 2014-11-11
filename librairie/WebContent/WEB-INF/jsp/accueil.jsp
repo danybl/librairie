@@ -22,9 +22,10 @@
 		    <li><a href="#">À PROPOS DE NOUS</a></li>
 		    <li><a href="#">CONTACTEZ-NOUS</a></li>
     	</ul>
-    <div class="specialite">
-    ${message }
     </div>
+    
+    <div class="specialite">
+		<marquee behavior="scroll" direction="left" id="specialite">   ${message }</marquee>
     </div>
     
     <div class="box">
