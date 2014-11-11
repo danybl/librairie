@@ -7,7 +7,7 @@
 		<link type="text/css" rel="stylesheet" href="librairieCSS.css"/>
 	</head>
 	<body>
-		<fieldset>
+		<fieldset class="confirmationInscription">
 			<p><c:if test="${empty form.erreurs ? 'succes' : 'erreur' }"/><c:out value="${form.resultat}"/></p>
 			<br/><br/>
 			<div class="connexion">
