@@ -39,6 +39,14 @@ public class AccueilOLD extends HttpServlet {
     public void doGet(HttpServletRequest request,
         HttpServletResponse response) throws ServletException,
         IOException {
+        this.getServletContext().getRequestDispatcher("/Accueil.jsp").forward(request,
+            response);
+    }
+
+    @Override
+    public void doPost(HttpServletRequest request,
+        HttpServletResponse response) throws ServletException,
+        IOException {
         HttpSession session = request.getSession(true);
         Panier panier = (Panier) session.getAttribute("panier");
         if(panier == null) {
@@ -61,18 +69,18 @@ public class AccueilOLD extends HttpServlet {
             out.println("<h1>LIBRAIRIE DU COIN <img src=\"livres.png\" name=\"image\" border=\"0\"></h1>");
             out.println("<div id=\"navigation\">");
             out.println("<ul>");
-            out.println("<li><a href=\"connexion.jsp\">CONNEXION</a></li>");
-            out.println("<li><a href=\"#\">DÉCONNEXION</a></li>");
+            out.println("<li><a href=\"/connexion.jsp\">CONNEXION</a></li>");
+            out.println("<li><a href=\"\\deconnexion\">DÉCONNEXION</a></li>");
             out.println("<li><a href=\"#\">MON COMPTE</a></li>");
-            out.println("<li><a href=\"inscription.jsp\">CRÉER UN NOUVEAU COMPTE</a></li>");
-            out.println("<li><a href=\"/AfficherPanier\">PANIER</a></li>");
+            out.println("<li><a href=\"/WEB-INF/jsp/inscription.jsp\">CRÉER UN NOUVEAU COMPTE</a></li>");
+            out.println("<li><a href=\"/AjoutPanier\">PANIER</a></li>");
             out.println("<li><a href=\"#\">À PROPOS DE NOUS</a></li>");
             out.println("<li><a href=\"#\">CONTACTEZ-NOUS</a></li>");
             out.println("<li><a href=\"#\">AIDE ?</a></li>");
             out.println("</ul>");
             out.println("</div>");
-            //out.println("<div class=\"connexion\"><a href=\"connexion.html\">Connexion</a></div>");
-            //out.println("<div class=\"connexion\"><a href=\"deconnection\">Deconnexion</a></div>");
+            out.println("<div class=\"connexion\"><a href=\"connexion.html\">Connexion</a></div>");
+            out.println("<div class=\"connexion\"><a href=\"deconnexion\">Deconnexion</a></div>");
             out.println("<div class=\"box\">");
 
             try {
@@ -93,7 +101,7 @@ public class AccueilOLD extends HttpServlet {
 
                             out.println("<span class=\"livre-image\">");
                             out.println("<a><img src=\""
-                                + element.getElementsByTagName("image").item(0).getAttributes().getNamedItem("src").getTextContent()
+                                + element.getElementsByTagName("image").item(0).getTextContent()
                                 + "\" height=\"300\" width=\"180\" style=\"width:80%\"></img></a>");
                             out.println("</span>");
                             out.println("<span class=\"text\">");

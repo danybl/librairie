@@ -1,7 +1,6 @@
 
 package beans;
 
-import beans.Livre;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -42,7 +41,7 @@ public class Panier {
         while(iterator.hasNext()
             && !trouve) {
             Livre l = iterator.next();
-            if(l.getCode() == id) {
+            if(l.getNumber() == id) {
                 trouve = true;
                 return l;
             }

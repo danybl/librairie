@@ -3,23 +3,23 @@ package beans;
 
 public class Livre {
 
-    private int code;
+    private int number;
 
-    private float prix;
+    private float price;
 
     private String title, author, cheminImage;
 
-    private int quantite = 1;
+    private int quantite = 0;
 
     public Livre() {
     }
 
-    public int getCode() {
-        return this.code;
+    public int getNumber() {
+        return this.number;
     }
 
-    public float getPrix() {
-        return this.prix;
+    public float getPrice() {
+        return this.price;
     }
 
     public String getTitle() {
@@ -38,12 +38,12 @@ public class Livre {
         return this.quantite;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
-    public void setPrix(float prix) {
-        this.prix = prix;
+    public void setPrice(float price) {
+        this.price = price;
     }
 
     public void setTitle(String title) {

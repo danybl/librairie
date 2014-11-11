@@ -61,7 +61,6 @@
        				</span>
        			</form>
        		</div>
-       		<c
        		</x:forEach>
     </div>
     </body>

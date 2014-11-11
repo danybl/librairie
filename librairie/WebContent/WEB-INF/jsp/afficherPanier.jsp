@@ -26,36 +26,54 @@
     <div class="connexion"><a href="deconnexion">Deconnexion</a></div>
     <div class="box">
                 	
-       		<c:forEach items="${panier}" var="livre">
+       		<c:forEach items="${panier.listeLivres}" var="livre">
+       		
        		<div class="livre">
        			<span class="livre-image">
-       				<img alt="<x:out select="$book/titre"/>" src="<x:out select="$book/image"/>"/>
+       				<img alt="<c:out value="${livre.title}"/>" src="<c:out value="${livre.cheminImage}"/>"/>
        			</span>
        			
        			<span class="text">
-       				<x:out select="$book/number"/>
+       				<c:out value="${livre.number}"/>
        			</span>
        			
        			<span class="title">
-       				<x:out select="$book/title"/>
+       				<c:out value="${livre.title}"/>
        			</span>
        			
        			<span class="author">
-       				<x:out select="$book/author"/>
+       				<c:out value="${livre.author}"/>
        			</span>
        			
        			<span class="price">
-       				<x:out select="$book/price"/>
+       				<c:out value="${livre.price}"/>
        			</span>
        			
-       			<form method="post"	action="ajoutPanier">
+       			<span class="qte">
+       				Quantite: <c:out value="${livre.quantite}"/>
+       			</span>
+       			
+       			<form method="post"	action="retraitPanier">
        				<span class="ajouter">
-       					<input name="idLivre" type="hidden" value="<x:out select="$book/number"/>"/>
-       					<input type="submit" value="Ajouter" id="btn"/>
+       					<input name="number" type="hidden" value="<c:out value="${livre.number}"/>"/>
+       					<input type="submit" value="Retirer" id="btn"/>
        				</span>
        			</form>
        		</div>
        		</c:forEach>
+       		<div class="bottom">
+       		<c:if test="${!empty panier.listeLivres }">
+       		<form action="viderPanier" method="post">
+       			<span class="RemoveAll">
+       			<input name="number" type="hidden" value="0">
+       			<input type="submit" value="Vider panier" id="btn">
+       		</span>
+       		</form>
+       		</c:if>
+       		<form action="accueil" method="get">
+       			<input type="submit" value="Accueil" id="btn">
+       		</form>
+       		</div>
     </div>
     </body>
 </html>

@@ -1,12 +1,12 @@
 
 package controllers;
 
-import beans.Client;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import beans.Client;
 import models.ConnexionForm;
 
 public class Connexion extends HttpServlet {
@@ -17,15 +17,15 @@ public class Connexion extends HttpServlet {
 
     private static final String ATT_FORM = "form";
 
-    private static final String VUE_CONNEXION_FAIL = "/connexion.jsp";
+    private static final String VUE_CONNEXION_FAIL = "/WEB-INF/jsp/connexion.jsp";
 
-    private static final String VUE_CONNEXION_SUCCESS = "/Accueil.jsp";
+    private static final String VUE_CONNEXION_SUCCESS = "/WEB-INF/jsp/accueil.jsp";
 
     @Override
     public void doGet(HttpServletRequest request,
         HttpServletResponse response) throws ServletException,
         IOException {
-        /* Affichage de la page d'inscription */
+        /* Affichage de la page de connexion */
         this.getServletContext().getRequestDispatcher(VUE_CONNEXION_FAIL).forward(request,
             response);
     }

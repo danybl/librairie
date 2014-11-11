@@ -23,10 +23,6 @@
 			</form> 
 		
 		<div class="connexion">
-			<form method="get" action="accueil">
-			<input type="submit" value="Accueil" id="btn">
-			</form>
-
 			<form method="get" action="inscription">
 			<input type="submit" value="Créer un compte" id="btn">
 			</form>
