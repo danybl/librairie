@@ -19,11 +19,8 @@
 		    <li><a href="ajoutPanier">PANIER</a></li>
 		    <li><a href="#">À PROPOS DE NOUS</a></li>
 		    <li><a href="#">CONTACTEZ-NOUS</a></li>
-		    <li><a href="#">AIDE ?</a></li>
     	</ul>
     </div>
-    <div class="connexion"><a href="connexion">Connexion</a></div>
-    <div class="connexion"><a href="deconnexion">Deconnexion</a></div>
     <div class="box">
                 	
        		<c:forEach items="${panier.listeLivres}" var="livre">

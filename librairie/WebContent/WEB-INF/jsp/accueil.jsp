@@ -21,12 +21,8 @@
 		    <li><a href="ajoutPanier">PANIER</a></li>
 		    <li><a href="#">À PROPOS DE NOUS</a></li>
 		    <li><a href="#">CONTACTEZ-NOUS</a></li>
-		    <li><a href="#">AIDE ?</a></li>
     	</ul>
     </div>
-    </br>
-    </br>
-    </br>
     </br>
     </br>
     </br>

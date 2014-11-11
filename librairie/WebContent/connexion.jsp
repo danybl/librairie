@@ -9,6 +9,7 @@
     </head>
     <body>
         <h1>LIBRAIRIE DU COIN <img src="livres.png" name="image" border="0" alt=" "></h1>
+        <marquee behavior="scroll" direction="left">TEXT</marquee>
     	<fieldset>
     		<legend> <img src="login.png" name="image" border="0" alt="login"> Connectez-vous!</legend>
     		<form class="connexion-form" method="post" action="Connexion">  
