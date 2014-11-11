@@ -2,11 +2,14 @@
 package controllers;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import beans.Client;
+import beans.Compteur;
 import models.ConnexionForm;
 
 public class Connexion extends HttpServlet {
@@ -52,7 +55,7 @@ public class Connexion extends HttpServlet {
             this.getServletContext().getRequestDispatcher(VUE_CONNEXION_FAIL).forward(request,
                 response);
         } else {
-
+        	Compteur.incrementer();
             this.getServletContext().getRequestDispatcher(VUE_CONNEXION_SUCCESS).forward(request,
                 response);
 

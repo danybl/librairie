@@ -1,4 +1,4 @@
-<%@ page pageEncoding="UTF-8" %>
+ <%@ page pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,6 +22,12 @@
 		    <li><a href="#">À PROPOS DE NOUS</a></li>
 		    <li><a href="#">CONTACTEZ-NOUS</a></li>
     	</ul>
+    </div>
+    <div>
+    <jsp:useBean id="compteur" scope="session" class="beans.Compteur" />
+		    <jsp:setProperty name="compteur" property="compte" param="compte" />
+		    <h2>Nombre de sessions en cours : ${compteur.getCompte()}</h2>
+
     </div>
     
     <div class="specialite">
