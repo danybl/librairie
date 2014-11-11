@@ -41,22 +41,20 @@ public class ConnexionForm {
             setErreur("client",
                 "Invalid username or password");
         } else {
-            HttpSession session = request.getSession();
-            Long idSessionClient = (Long) session.getAttribute("idSession");
-            Panier panierClient = (Panier) session.getAttribute("panier");
+            HttpSession session = request.getSession(true);
+            //Long idSessionClient = (Long) session.getAttribute("idSession");
+            // Panier panierClient = (Panier) session.getAttribute("panier");
 
-            if(idSessionClient == null
-                || idSessionClient.longValue() != this.client.getIdClient()) {
-                idSessionClient = new Long(this.client.getIdClient());
-                session.setAttribute("idSession",
-                    idSessionClient);
-                panierClient = new Panier();
-                session.setAttribute("panier",
-                    panierClient);
+            Long idSessionClient = new Long(this.client.getIdClient());
+            session.setAttribute("idSession",
+                idSessionClient);
+            Panier panierClient = new Panier();
+            session.setAttribute("panier",
+                panierClient);
 
-                System.out.println("Panier cree");
-            }
+            System.out.println("Panier cree");
         }
+
         if(this.erreurs.isEmpty()) {
             this.resultat = "Succès de la connexion.";
         } else {

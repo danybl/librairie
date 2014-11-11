@@ -15,10 +15,9 @@ public class LivreSpecialite extends HttpServlet {
     private String message;
 
     @Override
-    protected void doGet(HttpServletRequest request,
+    protected void doPost(HttpServletRequest request,
         HttpServletResponse response) throws ServletException,
         IOException {
-        response.setContentType("text/plain");
 
         String specialite = "1000 SAUCES";
 

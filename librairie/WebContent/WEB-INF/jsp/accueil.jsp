@@ -22,9 +22,11 @@
 		    <li><a href="#">À PROPOS DE NOUS</a></li>
 		    <li><a href="#">CONTACTEZ-NOUS</a></li>
     	</ul>
-    </div>
     <div class="specialite">
+    ${message }
     </div>
+    </div>
+    
     <div class="box">
     	<x:forEach var="book" select="$doc/bookstore/category/book">
        		<div class="livre">
