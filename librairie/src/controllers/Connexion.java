@@ -19,7 +19,7 @@ public class Connexion extends HttpServlet {
 
     private static final String VUE_CONNEXION_FAIL = "/WEB-INF/jsp/connexion.jsp";
 
-    private static final String VUE_CONNEXION_SUCCESS = "/WEB-INF/jsp/accueil.jsp";
+    private static final String VUE_CONNEXION_SUCCESS = "/accueil"; ///WEB-INF/jsp/accueil.jsp
 
     @Override
     public void doGet(HttpServletRequest request,
@@ -46,6 +46,7 @@ public class Connexion extends HttpServlet {
             form);
         request.setAttribute(ATT_CLIENT,
             client);
+
         if(client == null) {
             /* Transmission de la paire d'objet request/response à notre JSP */
             this.getServletContext().getRequestDispatcher(VUE_CONNEXION_FAIL).forward(request,

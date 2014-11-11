@@ -20,7 +20,7 @@ public class Accueil extends HttpServlet {
         HttpServletResponse response) throws ServletException,
         IOException {
 
-        HttpSession session = request.getSession(true);
+        HttpSession session = request.getSession();
         Panier panier = (Panier) session.getAttribute("panier");
         if(panier == null) {
 
@@ -28,10 +28,23 @@ public class Accueil extends HttpServlet {
 
         } else {
 
-            String message = (String) request.getAttribute("message");
+            this.getServletContext().getRequestDispatcher(VUE).forward(request,
+                response);
+        }
+    }
 
-            request.setAttribute("message",
-                message);
+    @Override
+    public void doPost(HttpServletRequest request,
+        HttpServletResponse response) throws ServletException,
+        IOException {
+
+        HttpSession session = request.getSession();
+        Panier panier = (Panier) session.getAttribute("panier");
+        if(panier == null) {
+
+            response.sendRedirect("connexion");
+
+        } else {
 
             this.getServletContext().getRequestDispatcher(VUE).forward(request,
                 response);
