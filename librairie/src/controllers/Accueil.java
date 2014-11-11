@@ -26,15 +26,16 @@ public class Accueil extends HttpServlet {
 
             response.sendRedirect("connexion");
 
+        } else {
+
+            String message = (String) request.getAttribute("message");
+
+            request.setAttribute("message",
+                message);
+
+            this.getServletContext().getRequestDispatcher(VUE).forward(request,
+                response);
         }
-
-        String message = (String) request.getAttribute("message");
-
-        request.setAttribute("message",
-            message);
-
-        this.getServletContext().getRequestDispatcher(VUE).forward(request,
-            response);
     }
 
 }

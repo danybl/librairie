@@ -87,7 +87,7 @@
     <url-pattern>/livreSpecialite</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
-    <welcome-file>connexion</welcome-file>
+    <welcome-file>accueil</welcome-file>
   </welcome-file-list>
   <login-config>
     <auth-method>FORM</auth-method>
