@@ -10,7 +10,7 @@
     <body>
     	<h1>LIBRAIRIE DU COIN <img src="livres.png" name="image" border="0" alt=" "></h1>
 
-        <form method="post" action="Inscription">
+        <form method="post" action="inscription">
             <fieldset>
                 <legend>Inscription</legend>
                 
@@ -34,10 +34,10 @@
                 <span class="erreur">${form.erreurs['nom'] }</span>
                 <br /><br />
 
-                <input id ="btn" type="submit" value="Inscription" class="sansLabel" />   
+                <input id ="btn" type="submit" value="Inscription"/>   
                            
         </form>
-        <form method="get" action="Accueil">
+        <form method="get" action="accueil">
             <input id="btn" type="submit" value="Accueil"/>
         </form>  
         <br />  
